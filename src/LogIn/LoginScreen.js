@@ -13,7 +13,7 @@ const LoginScreen = () => {
         let response = credentialMatch(userName, password);
         if (response) {
             setShowInvalidMsg(false)
-            alert("login success");
+            alert("login success done");
         } else {
             setShowInvalidMsg(true)
         }
