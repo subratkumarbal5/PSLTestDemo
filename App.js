@@ -17,21 +17,17 @@ import {
   View,
 } from 'react-native';
 
-
-import LoginScreen from './src/LogIn/LoginScreen';
-
-
-
+import AppContainer from './src/app/AppContainer';
+import AppProvider from './src/app/AppContext';
 const App = () => {
-
   return (
-
-    <View style={{ flex: 1 }}>
-      <LoginScreen></LoginScreen>
+    <View style={{flex: 1}}>
+      {/* <LoginScreen></LoginScreen> */}
+      <AppProvider>
+        <AppContainer />
+      </AppProvider>
     </View>
-
   );
 };
-
 
 export default App;
